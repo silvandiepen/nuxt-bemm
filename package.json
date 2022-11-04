@@ -1,0 +1,59 @@
+{
+  "name": "nuxt-bemm",
+  "version": "0.0.1",
+  "description": "Nuxt module for bemm",
+  "keywords": [
+    "Nuxt",
+    "Module",
+    "Bemm",
+    "bem",
+    "block",
+    "element",
+    "modifier"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/silvandiepen/nuxt-bemm"
+  },
+  "author": {
+    "name": "Sil van Diepen",
+    "email": "me@sil.mt"
+  },
+  "bugs": {
+    "url": "https://github.com/silvandiepen/nuxt-bemm/issues"
+  },
+  "homepage": "https://bemm.sil.mt",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepack": "nuxt-module-build --stub && nuxi prepare playground && nuxt-module-build",
+    "play": "nuxi dev playground",
+    "play:build": "nuxi build playground",
+    "play:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "@nuxt/module-builder": "^0.2.0",
+    "@nuxtjs/eslint-config-typescript": "^11.0.0",
+    "@semantic-release/git": "^10.0.1",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
+    "eslint": "^8.26.0",
+    "nuxt": "^2.15.8",
+    "semantic-release": "^19.0.5"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.0.0-rc.12",
+    "bemm": "^0.3.3"
+  }
+}

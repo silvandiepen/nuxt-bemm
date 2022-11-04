@@ -1,0 +1,27 @@
+{
+  "preset": "conventionalcommits",
+  "presetConfig": {
+    "types": [
+      {
+        "type": "fix",
+        "section": "Bug Fixes"
+      },
+      {
+        "type": "feat",
+        "section": "Features"
+      }
+    ]
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    [
+      "@semantic-release/git",
+      {
+        "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
+      }
+    ]
+  ]
+}
