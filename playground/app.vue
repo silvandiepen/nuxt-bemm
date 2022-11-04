@@ -1,11 +1,11 @@
 <script setup>
-const bemm = _createBemm("my-component");
+const bemm = createBemm("my-component");
 </script>
 <template>
-  <div :class="bemm"></div>
+  <div class="something" :class="bemm()"></div>
 </template>
 <style>
-div::before {
+.something::before {
   content: "doesn't work";
 }
 .my-component::before {

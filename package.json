@@ -1,15 +1,12 @@
 {
   "name": "nuxt-bemm",
   "version": "0.0.1",
-  "description": "Nuxt module for bemm",
+  "description": "Bemm for Nuxt",
   "keywords": [
-    "Nuxt",
-    "Module",
-    "Bemm",
-    "bem",
-    "block",
-    "element",
-    "modifier"
+    "nuxt",
+    "nuxt-module",
+    "bemm",
+    "bem"
   ],
   "repository": {
     "type": "git",
@@ -43,17 +40,18 @@
     "play:prepare": "nuxt-module-build --stub && nuxi prepare playground",
     "semantic-release": "semantic-release"
   },
-  "devDependencies": {
-    "@nuxt/module-builder": "^0.2.0",
-    "@nuxtjs/eslint-config-typescript": "^11.0.0",
-    "@semantic-release/git": "^10.0.1",
-    "conventional-changelog-conventionalcommits": "^5.0.0",
-    "eslint": "^8.26.0",
-    "nuxt": "^2.15.8",
-    "semantic-release": "^19.0.5"
-  },
   "dependencies": {
     "@nuxt/kit": "^3.0.0-rc.12",
-    "bemm": "^0.3.3"
+    "bemm": "^0.5.1",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@nuxt/module-builder": "latest",
+    "@nuxtjs/eslint-config-typescript": "latest",
+    "@semantic-release/git": "^10.0.1",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
+    "eslint": "latest",
+    "nuxt": "^3.0.0-rc.12",
+    "semantic-release": "^19.0.5"
   }
 }
