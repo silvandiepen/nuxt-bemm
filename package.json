@@ -38,20 +38,24 @@
     "play": "nuxi dev playground",
     "play:build": "nuxi build playground",
     "play:prepare": "nuxt-module-build --stub && nuxi prepare playground",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "test": "nuxi test playground"
   },
   "dependencies": {
     "@nuxt/kit": "^3.0.0-rc.12",
-    "bemm": "^0.5.1",
+    "bemm": "^1.0.1",
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {
     "@nuxt/module-builder": "latest",
+    "@nuxt/test-utils": "^3.0.0",
     "@nuxtjs/eslint-config-typescript": "latest",
     "@semantic-release/git": "^10.0.1",
+    "@vitest/coverage-c8": "^0.25.3",
     "conventional-changelog-conventionalcommits": "^5.0.0",
     "eslint": "latest",
-    "nuxt": "^3.0.0-rc.12",
-    "semantic-release": "^19.0.5"
+    "nuxt": "^3.0.0",
+    "semantic-release": "^19.0.5",
+    "vitest": "^0.25.3"
   }
 }
